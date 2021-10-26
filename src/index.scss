@@ -49,6 +49,24 @@ table {
 	border-spacing: 0;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 75%;
+  
+  @media (max-width: $breakpoint-xl){
+    max-width: 80%;
+  }
+  @media (max-width: $breakpoint-lg){
+    max-width: 85%;
+  }
+  @media (max-width: $breakpoint-md){
+    max-width: 90%;
+  }
+  @media (max-width: $breakpoint-sm){
+    max-width: 95%;
+  }
+}
+
 body {
 	margin: 0;
   font-family: $font-oleo_script, $font-open_sans;
