@@ -20,6 +20,7 @@
       padding: .5em;
       border-radius: $default-border-radius;
       cursor: pointer;
+      transition: $default-transition;
       a{
         color: $secundary-color;
         text-decoration: none;
@@ -37,11 +38,14 @@
 
 .mobile_menu_icon{
   display: none;
+  
+  transition: $default-transition;
 }
 @media screen and (max-width: $breakpoint-lg) {
   .header_link{
     display: none;
   }
+  
   .mobile{
     position: absolute;
     display: block;
@@ -50,6 +54,9 @@
     top: 3em;
     width: 100%;
     text-align: center;
+    transition: $default-transition;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
   }
   .mobile_menu_icon{
     display: flex;
@@ -60,5 +67,6 @@
     background-color: transparent;
     font-size: 2em;
     right: 100%;
+    color: $secundary-color;
   }
 }
