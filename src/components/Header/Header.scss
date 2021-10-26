@@ -24,6 +24,7 @@
       a{
         color: $secundary-color;
         text-decoration: none;
+        text-transform: capitalize;
       }
       &:hover{
         background-color: $secundary-color;
