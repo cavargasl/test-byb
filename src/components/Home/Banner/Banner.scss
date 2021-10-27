@@ -31,10 +31,20 @@
     gap: .5em;
     
     button{
+      cursor: pointer;
       font-size: 1em;
       border-radius: $border-radius;
+      
+      .animate-button-icon{
+        transition: transform 300ms;
+      }
       svg{
         font-size: .7em;
+      }
+      &:hover{
+        .animate-button-icon{
+          transform: translateX(.5em);
+        }
       }
     }
   }

@@ -9,13 +9,20 @@
   gap: 1em;
   align-items: center;
   justify-content: space-between;
+  transition: $default-transition;
 }
 .primary {
   background-color: $primary-color;
   color: white;
+  &:hover{
+    background-color: $primary-color-hover;
+  }
 }
 
 .secundary {
   background-color: $gray-color-light;
   color: $secundary-color;
+  &:hover{
+    background-color: $gray-color-light-hover;
+  }
 }

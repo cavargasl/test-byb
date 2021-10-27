@@ -13,8 +13,8 @@ export default function Banner() {
         <p>Pariatur excepteur reprehenderit eu in. Sit ea fugiat deserunt commodo ex cillum commodo non exercitation veniam aute. Et velit deserunt aliqua est commodo minim amet quis.</p>
       </div>
       <div className="home-banner_buttons">
-        <PrimaryButton text={"Ok let's go"} icon={<FontAwesomeIcon icon={faArrowCircleRight} />} />
-        <SecundaryButton text={"More info"} icon={<FontAwesomeIcon icon={faQuestionCircle} />} />
+        <PrimaryButton text={"Ok let's go"} icon={<FontAwesomeIcon className="animate-button-icon" icon={faArrowCircleRight} />} />
+        <SecundaryButton text={"More info"} icon={<FontAwesomeIcon className="animate-button-icon" icon={faQuestionCircle} />} />
       </div>
       </div>
     </div>
