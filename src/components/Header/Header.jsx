@@ -14,15 +14,16 @@ export default function Header() {
     }
     return setActive(history.location.pathname)
   }
+  const domainForGitHubPAges = "test-byb/"
   return (
     <header className="header container">
-      <Link to="/" className="header_logo" onClick={() => changeActive()}><h1>myLorem</h1></Link>
+      <Link to={`/${domainForGitHubPAges}`} className="header_logo" onClick={() => changeActive()}><h1>myLorem</h1></Link>
       <nav className="navbar">
         <ul className={isMobile? "header_link mobile" : "header_link"}
           onClick={() => setIsMobile(!isMobile)}
           >
-          <li className={active === "/" ? "active" : "" } onClick={() => changeActive()}>
-            <Link to="/">welcome</Link>
+          <li className={active === `/${domainForGitHubPAges}` ? "active" : "" } onClick={() => changeActive()}>
+            <Link to={`/${domainForGitHubPAges}`}>welcome</Link>
           </li>
           <li className={active === "/dropdown" ? "active" : "" } onClick={() => changeActive()}>
             <Link to="/dropdown">Dropdown</Link>

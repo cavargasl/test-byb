@@ -9,7 +9,7 @@ export default function App() {
     <BrowserRouter>
       <LayoutHome>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/test-byb/" component={Home} />
           <Route component={NotFound} />
         </Switch>
       </LayoutHome>
