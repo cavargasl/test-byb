@@ -51,13 +51,13 @@ table {
 
 .container {
   margin: 0 auto;
-  max-width: 75%;
+  max-width: 70%;
   
   @media (max-width: $breakpoint-xl){
-    max-width: 80%;
+    max-width: 75%;
   }
   @media (max-width: $breakpoint-lg){
-    max-width: 85%;
+    max-width: 80%;
   }
   @media (max-width: $breakpoint-md){
     max-width: 90%;
