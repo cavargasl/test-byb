@@ -17,16 +17,16 @@ export default function Header() {
             <Link to="/">welcome</Link>
           </li>
           <li>
-            <Link to="/">Dropdown</Link>
+            <Link to="/dropdown">Dropdown</Link>
           </li>
           <li>
-            <Link to="/">left sidebar</Link>
+            <Link to="/left_sidebar">left sidebar</Link>
           </li>
           <li>
-            <Link to="/">right sidebar</Link>
+            <Link to="/right_sidebar">right sidebar</Link>
           </li>
           <li>
-            <Link to="/">no sidebar</Link>
+            <Link to="/no_sidebar">no sidebar</Link>
           </li>
         </ul>
       </nav>
