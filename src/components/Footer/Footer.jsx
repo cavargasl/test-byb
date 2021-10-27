@@ -24,11 +24,11 @@ function Aside() {
     <aside className="footer_aside">
       <h2>Random Stuff</h2>
       <div className="footer_aside_info">
-        <p>Cillum aliqua id consectetur.</p>
+        <p>Cillum aliqua consectetur.</p>
         <p>Consectetur eu dolor in.</p>
-        <p>Eiusmod ut ea nostrud sunt proident in.</p>
+        <p>Eiusmod ut ea nostrud sunt in.</p>
         <p>Ea nulla ex ut exercitation anim.</p>
-        <p>Nulla id aliqua nulla in nisi proident.</p>
+        <p>Nulla id nulla in nisi proident.</p>
       </div>
     </aside>
   )
