@@ -9,12 +9,14 @@
   &_logo{
     color: $red-color;
     font-size: 2em;
+    font-family: $font-oleo_script;
+    cursor: pointer;
+    text-decoration: none;
   }
 
   &_link{
     display: flex;
     gap: .5em;
-    font-family: $font-open_sans;
     font-weight: 700;
     li{
       padding: .5em;

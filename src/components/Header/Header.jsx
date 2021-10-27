@@ -16,7 +16,7 @@ export default function Header() {
   }
   return (
     <header className="header container">
-      <h1 className="header_logo">myLorem</h1>
+      <Link to="/" className="header_logo" onClick={() => changeActive()}><h1>myLorem</h1></Link>
       <nav className="navbar">
         <ul className={isMobile? "header_link mobile" : "header_link"}
           onClick={() => setIsMobile(!isMobile)}
