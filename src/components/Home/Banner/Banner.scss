@@ -32,7 +32,9 @@
     
     button{
       font-size: 1em;
-      
+      @media screen and (max-width: $breakpoint-xs) {
+        font-size: .7em;
+      }
       .animate-button-icon{
         transition: transform 300ms;
       }
