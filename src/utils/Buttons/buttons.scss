@@ -1,0 +1,21 @@
+@import "../../scss/variables.scss";
+
+.button{
+  white-space: nowrap;
+  padding: .3em .5em;
+  border: none;
+  font-weight: 800;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: space-between;
+}
+.primary {
+  background-color: $primary-color;
+  color: white;
+}
+
+.secundary {
+  background-color: $gray-color-light;
+  color: $secundary-color;
+}
