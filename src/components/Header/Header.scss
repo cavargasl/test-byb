@@ -33,6 +33,12 @@
         }
       }
     }
+    .active{
+      background-color: $secundary-color;
+      a{
+        color: white;
+      }
+    }
   }
 
 }
