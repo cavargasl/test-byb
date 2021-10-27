@@ -14,11 +14,9 @@
     gap: 1em;
     width: 100%;
     //grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
   }
-  @media screen and (max-width: $breakpoint-xl) {
-    
-  }
+  
 
   &_aside{
     display: flex;
@@ -45,13 +43,22 @@
     }
   }
 }
-
+@media (max-width: 474px) {
+  .footer_info{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .brand-icon{
+    justify-content: center;
+  }
+}
 .brand-icon{
   font-size: 2em;
   color: $secundary-color;
   display: flex;
   gap: .5em;
   cursor: pointer;
+  flex-wrap: wrap;
   svg{
     transition: $default-transition;
     &:hover{
