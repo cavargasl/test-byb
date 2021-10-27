@@ -1,24 +1,40 @@
 import React from 'react'
 import "./buttons.scss"
 
-export function PrimaryButton(props) {
-  return (
+/**
+ * return a element html type button
+ * @param {onClick, primary=false, text, icon, iconleft=false} props 
+ * @returns <button />
+ */
+export default function Button(props) {
+  const {onClick, primary=false, text, icon, iconleft=false} = props
+  return(
     <button
-      onClick={props.onClick}
-      className="button primary"
+      onClick={onClick}
+      className={primary ? "button primary" : "button secundary"}
     >
-      {props.text}{props.icon? props.icon : null}
+      {
+        iconleft ? 
+        <Left text={text} icon={icon} />:
+        <Rihgt text={text} icon={icon} />
+      }
     </button>
   )
 }
 
-export function SecundaryButton(props) {
+
+const Left = (props) => {
   return (
-    <button
-      onClick={props.onClick}
-      className="button secundary"
-    >
-      {props.text}{props.icon? props.icon : null}
-    </button>
+    <>
+      {props.icon? props.icon : null}{props.text}
+    </>
+  )
+}
+
+function Rihgt(props) {
+  return (
+    <>
+    {props.text}{props.icon? props.icon : null}
+    </>
   )
 }

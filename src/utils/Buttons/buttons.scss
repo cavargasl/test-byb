@@ -10,6 +10,8 @@
   align-items: center;
   justify-content: space-between;
   transition: $default-transition;
+  border-radius: $border-radius;
+  cursor: pointer;
 }
 .primary {
   background-color: $primary-color;
